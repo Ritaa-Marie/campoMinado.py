@@ -57,9 +57,11 @@ O programa é executado no **terminal**, logo tem apenas a interface da linha de
 > **Observação:** o jogador inicia na **posição verde**, e se move pelo campo com as opções do menu.
 
 **Campo inicial:**
+
 ![Exibição do campo minado inicial](inicio.png)
 
 **Campo final:**
+
 ![Exibição do campo minado final](final.png)
 
 ---
