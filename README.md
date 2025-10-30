@@ -1,87 +1,85 @@
-# Campo Minado
-Trabalho desenvolvido por Rita Mariê Amaral Siqueira, aluna do curso de Engenharia de Computação (CEFET - Campus V) para a disciplina de Programação em Python orientada pelo professor Guido Pantuza.
+# 🟢 Campo Minado
 
-# 1) Como iniciar e terminar a execução do programa
-Para iniciar o sistema:
-  1 - Abra o arquivo em uma IDE (VSCode) ou terminal;
-  2 - Verifique se a extensão do python e interpretador estão instalados (versão 13.3);
-  3 - Aberte run para executar o arquivo, ou navegue até o diretório que contém o arquivo, usando o comando cd (se estiver usando Windows), e utilize esse comando "python campo_minado.py";
-  4 - O sistema será exibido na tela principal com as instruções para o jogo.
+Trabalho desenvolvido por **Rita Mariê Amaral Siqueira**, aluna do curso de **Engenharia de Computação (CEFET - Campus V)**, para a disciplina de **Programação em Python**, orientada pelo professor **Guido Pantuza**.
 
-  Para sair do sistema:
-    1 - Utilize a opção do menu "8" para encerrar a execução;
-    2 - Feche a janela que contém o arquivo;
-    3 - Pressione Ctrl + C no terminal;
+---
 
-# 2) Opções oferecidas pelo programa
-  No início do programa é possível:
-    1- Escolher o tamanho do campo, digitando um único valor entre 1 e 10;
-    2 -Escolher o número de minas escondidas, com no mínimo 1 e no máximo o total de posições da matriz;
-  Logo em seguida, é exibido o menu de opções para de fato jogar:
-    (1) - Cima >> para andar para cima;
-    (2) - Baixo >> para andar para baixo;
-    (3) - Direita >> para andar para direita;
-    (4) - Esquerda >> para andar para esquerda;
-    (5) - Marcar uma posição como mina (bandeira) >> para marcar uma posição como mina;
-    (6) - Abrir uma posição >> para abrir uma posição;
-    (7) - Retirar bandeira >> para retirar uma bandeira;
-    (8) - Sair >> para sair do sistema;
-  Após as opções escolhidas, se não utilizar a opção "8", o jogador verá duas respostas:
-    1 - "Você ganhou o jogo! Parabéns.", caso ele marque todas as minas corretamente;
-    2 - "Você perdeu o jogo.", caso abra uma posição com mina.
+## 1) Como iniciar e terminar a execução do programa
 
-# 3) Principais telas
-O programa é exibido via terminal, logo temos apenas a interface da linha de comando:
-{
------- CAMPO MINADO ------
+### Para iniciar o sistema:
+1. Abra o arquivo em uma IDE (como **VSCode**) ou terminal;
+2. Verifique se o **Python** está instalado (versão **3.13.3** ou superior) e se o terminal é compatível com ANSI colors (para as cores apareçam corretamente);
+3. Execute o programa:
+   - Na IDE: clique em **Run** ou no botão **"Play"**;
+   - No terminal: navegue até o diretório do arquivo com o comando  
+     ```bash
+     cd caminho/do/arquivo python campo_minado.py
+     ```
+4. O sistema será exibido na tela principal com as instruções do jogo.
 
-Instruções para o jogo:
- - Escolha um tamanho para o lado seu campo minado quadrado (máximo: 10)
- - Escolha o número de minas escondidas (mínimo: 1)
- - Você inicia o jogo na posição da cor verde.
- - O limite de bandeiras ('M') é o número de minas.
- - Você perde o jogo se abrir uma casa com mina (?).
- - Você vence o jogo se marcar todas as casas com minas corretamente.
+### Para sair do sistema:
+1. Utilize a opção **"(8) - Sair"** no menu principal;
+2. Ou feche a janela que contém o arquivo;
+3. Ou pressione **Ctrl + C** no terminal.
 
- Digite o tamanho para o lado do campo minado: RESPOSTA DO USUÁRIO
- Digite o número de minas escondidas: RESPOSTA DO USUÁRIO
+---
 
-== Campo minado ==
-|*| |*|
-|*| |*|
-Número de bandeiras disponíveis ('M'): 2
+## 2) Opções oferecidas pelo programa
 
-   Movimentação
- (1) - Cima
- (2) - Baixo
- (3) - Direita
- (4) - Esquerda
- (5) - Marcar uma posição como mina (bandeira)
- (6) - Abrir uma posição
- (7) - Retirar bandeira
- (8) - Sair
---------------------
-Digite a sua opção: RESPOSTA DO USUÁRIO
+### No início do programa:
+- Escolher o **tamanho do campo**, digitando um valor entre **1 e 10**;
+- Escolher o **número de minas escondidas**, com no mínimo **1** e no máximo o total de posições da matriz.
 
-== Campo minado ==
-|?| |2|
-|2| |?|
-Você perdeu o jogo.
-}
+### Durante o jogo, o menu de movimentação oferece:
+| Opção | Ação |
+|:------:|:-----|
+| (1) | Andar para cima |
+| (2) | Andar para baixo |
+| (3) | Andar para a direita |
+| (4) | Andar para a esquerda |
+| (5) | Marcar uma posição como mina (bandeira) |
+| (6) | Abrir uma posição |
+| (7) | Retirar uma bandeira |
+| (8) | Sair do jogo |
 
-OBSERVAÇÃO: o jogador começa na posição marcada com a cor verde, e a partir dela passa a se movimentar no campo:
+### Resultados possíveis:
+- **“Você ganhou o jogo! Parabéns.”** → se marcar todas as minas corretamente.  
+- **“Você perdeu o jogo.”** → se abrir uma casa com mina.
+
+---
+
+##  3) Principais telas
+
+O programa é executado no **terminal**, logo tem apenas a interface da linha de comando:
+
+### Tela inicial:
+
+> **Observação:** o jogador inicia na **posição verde**, e se move pelo campo com as opções do menu.
+
+**Campo inicial:**
 ![Exibição do campo minado inicial](assets/screenshot.png)
 
-Ao finalizar o jogo, ele é impresso com as respostas:
+**Campo final:**
 ![Exibição do campo minado final](assets/screenshot.png)
 
-# 4) Conclusão
-O jogo desenvolvido teve como finalidade simular um campo minado simples, mas com algumas de suas características principais.
-Limitações:
-  1 - Não permite a escolha de níveis (fácil, médio, alto);
-  2 - Não abre todas as casas vizinhas mostrando os números, caso uma casa segura seja aberta;
-  3 - Fica mais complexo se movimentar no campo sem ser pelo uso do mouse;
-Considerações finais:
-  Apesar de possuir algumas limitações, o jogo contém todas as regras impostas na descrição do trabalho, e tem o objetivo de ser simples e acessível para que qualquer pessoa consiga jogar.
+---
 
-C:\Users\ritam\OneDrive\Documentos\Faculdade\2º semestre\pythonOp>
+##  4) Conclusão
+
+O jogo desenvolvido teve como finalidade **simular um campo minado simples**, mantendo suas principais regras e lógicas.
+
+### Limitações:
+1. Não há seleção de **níveis de dificuldade** (fácil, médio, difícil);
+2. Não abre automaticamente as **casas vizinhas seguras**;
+3. A movimentação é feita apenas pelo **teclado**, sem uso do mouse.
+
+### Considerações finais:
+Apesar das limitações, o jogo atende a todas as regras propostas no trabalho.  
+Foi desenvolvido com o objetivo de ser **didático, acessível e funcional**, permitindo que qualquer pessoa possa jogar diretamente no terminal.
+
+---
+
+**Autora:** Rita Mariê Amaral Siqueira  
+**Disciplina:** Programação em Python – CEFET-MG Campus V  
+**Professor:** Guido Pantuza  
+
